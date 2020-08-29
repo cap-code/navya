@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"/>
+    <title>simple dashboard</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="title" style="text-align: center;">DASHBOARD🏋️‍♀️🤸‍♂️💪</h1>
+            <nav>
+                <div style="text-align: center;">
+                    <a href="add" class=button>ADD</a>
+                    <a href="edit" class=button>EDIT</a>
+                    <a href="list" class=button>LIST</a>
+                    <a href="veiw" class=button>VEIW</a>
+                    <a href="delete" class=button>DELETE</a>
+        
+                </div>
+            </nav>
+        </header>
+        
+        <form id="addform">
+            <label for="name">Name</label>
+            <input  type="text"  id="name" name="name">
+            <label for="time">time</label>
+            <input name="time" type="time" id="time">
+            <button class="button-primary" type="submit">submit</button>
+        </form>
+        <script src="add.js"></script>
+    </body>
+</html>
