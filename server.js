@@ -21,3 +21,10 @@ app.post('/data',(req,res)=>{
 app.get('/data',(req,res)=>{
   people.find().then(data=>res.json(data));
 });
+
+app.put('/update',(req,res)=>{
+    people.findOneAndUpdate({name:req.body.name,time:req.body.time},{$set:{name:req.body.newname,time:req.body.newtime}}).then(updatedDoc=>{});
+    console.log("updated");
+    var data = req.body;
+    res.json(data);
+});

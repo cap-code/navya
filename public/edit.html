@@ -4,7 +4,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"/>
-    <link rel="stylesheet" type="text/css" media="all" href="style.css"/>
     <title>simple dashboard</title>
     </head>
     <body>
@@ -22,17 +21,18 @@
             </nav>
         </header>
         
-        <form class="editform">
+        <form id="editform">
             <label for="name">Name</label>
-            <input  type="text"  id="name" name="Name">
+            <input  type="text"  id="name" name="name">
             <label for="time">time</label>
             <input name="time" type="time" id="time">
             <label >To</label>
             <label for="newname">Name</label>
-            <input  type="text"  id="newname" name="newame">
+            <input  type="text"  id="newname" name="newname">
             <label for="newtime">time</label>
             <input name="newtime" type="time" id="newtime">
             <button class="button-primary" type="submit">submit</button>
         </form>
+        <script src="edit.js"></script>
     </body>
 </html>
