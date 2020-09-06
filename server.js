@@ -28,3 +28,9 @@ app.put('/update',(req,res)=>{
     var data = req.body;
     res.json(data);
 });
+
+app.get('/view/:name',(req,res)=>{
+    var getname = req.params.name;
+    console.log(getname);
+    people.find({name:getname}).then(data => res.json(data));
+});
